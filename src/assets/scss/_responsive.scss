@@ -1,0 +1,27 @@
+//CONTENT
+@media(max-width:991px) {
+    .content {
+        padding-left:94px !important;
+    }
+}
+@media(max-width:662px) {
+    .content {
+        overflow:auto;
+    }
+}
+
+//SIDEMENU
+@media(max-width:991px) {
+    .sidemenu {
+        width: 75px;
+        min-width:75px;
+        ul.menu {
+            li {
+                .menu-text {
+                    display:none;
+                    visibility:hidden;
+                }
+            }
+        }
+    }
+}

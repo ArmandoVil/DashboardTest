@@ -1,0 +1,12 @@
+<h2>Product Reviews: {{productDetails.title}}</h2>   
+<div class="no-reviews" *ngIf="!productDetails.reviews">There are no Reviews for this product</div>
+<div class="product-reviews" *ngFor="let review of productDetails.reviews">
+    <div class="review">
+        <h3>Title: <strong>{{review.title}}</strong></h3>
+        <span class="user-review">user: {{review.user}}</span>
+        <div class="description">{{review.description}}</div>
+    </div>
+    <hr>
+</div>
+
+<button mat-flat-button (click)="goBack()"><mat-icon>keyboard_backspace</mat-icon> Go Back</button>

@@ -1,0 +1,5 @@
+<div class="toolbar">
+    <div class="tool-button" *ngIf="addNewButton" routerLink="/products/add"><mat-icon>add</mat-icon> Add New Product</div>
+    <div class="tool-button" (click)="layoutService.toGrid()"><mat-icon>view_module</mat-icon> Grid View</div>
+    <div class="tool-button" (click)="layoutService.toList()"><mat-icon> view_list</mat-icon> List View</div>
+</div>

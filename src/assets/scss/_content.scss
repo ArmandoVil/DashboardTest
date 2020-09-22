@@ -1,0 +1,148 @@
+//COMMON
+.content {
+    padding-top:150px;
+    padding-left:20vw !important;
+    padding-right: 18px;
+    transition: padding .36s ease-in-out;
+    h2 {
+        margin: 0 0 24px;
+        padding:0 0 12px;
+        font-size:1.5rem;
+        font-weight:300;
+        border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+    table {
+        width:100%;
+        .mat-flat-button {
+            line-height: 24px;
+            padding:0 8px;
+        }
+        td.mat-cell {
+            padding-right: 8px;
+        }
+        th.mat-header-cell {
+            padding-right: 2px;
+        }
+        a .icon-review {
+            color:#333;
+            &:hover {
+                color:#666;
+            }
+        }
+    }
+    //GRID VIEW
+    .grid-layout {
+        tr.mat-row {
+            height: auto;
+            display: inline-table;
+            width: 31.333%;
+            margin: 1%;
+            filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.24));
+        }
+        td.mat-cell {
+            padding: 12px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mat-header-row {
+            display:none;
+            visibility:hidden;
+        }
+    }
+}
+
+//BUTTONS
+.mat-flat-button.mat-primary, 
+.mat-raised-button.mat-primary, 
+.mat-fab.mat-primary, 
+.mat-mini-fab.mat-primary {
+    background-color: $primary-color;
+}
+
+.mat-flat-button {
+    line-height: 28px;
+}
+
+form button {
+    margin-right:12px !important;
+}
+
+.button-delete {
+    color:red;
+    background:transparent;
+    border:none;
+}
+
+//CREATE PRODUCT
+.mat-form-field {
+    width: 100%;
+    margin: 6px 0;
+    textarea.mat-input-element {
+        min-height: 18vh;
+    }
+}
+
+.loading {
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 12px;
+    .mat-spinner {
+        width:32px !important;
+        height:32px !important;
+        svg {
+            width:32px !important;
+            height:32px !important;
+            circle {
+                stroke: $primary-color;
+            }
+        }
+    }
+}
+
+//TOOLBAR
+.toolbar {
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    .tool-button {
+        display:flex;
+        align-items:center;
+        float:left;
+        margin:0 18px 12px;
+        cursor:pointer;
+    }
+    .mat-icon {
+        padding-right:28px;
+    }
+}
+
+//REVIEWS
+.no-reviews {
+    padding:36px 0;
+    font-size:1.2rem;
+}
+.product-reviews {
+    .review {
+        h3 {
+            font-size:1.3rem;
+            margin-bottom:4px;
+        }
+        strong {
+            font-weight:500;
+        }
+        .user-review {
+            font-size:0.9rem;
+        }
+        .description {
+            font-size:1rem;
+            margin:12px 0 18px;
+        }
+    }
+}

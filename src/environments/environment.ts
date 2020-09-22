@@ -14,3 +14,8 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+export class AppSource {
+  public static APIurl: string = "https://us-central1-test-b7665.cloudfunctions.net/api/";
+  public static storeId: string = "stores/ijpxNJLM732vm8AeajMR";
+}
