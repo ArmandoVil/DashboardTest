@@ -10,7 +10,12 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('dashboardTest app is running!');
+    expect(page.getTitleText()).toEqual('account_circle');
+  });
+
+  it('should have element ID', () => {
+    page.navigateTo();
+    expect(page.getProductsTable()).toContain("ID");
   });
 
   afterEach(async () => {
